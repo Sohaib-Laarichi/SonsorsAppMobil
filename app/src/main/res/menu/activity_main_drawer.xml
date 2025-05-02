@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Capteurs" />
+
+
+    <!-- Section principale -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Accueil" />
+
+        <item
+            android:id="@+id/nav_sensors"
+            android:icon="@drawable/ic_sensors"
+            android:title="Capteurs disponibles" />
+
+        <item
+            android:id="@+id/nav_temp"
+            android:icon="@drawable/ic_temp"
+            android:title="Température" />
+
+        <item
+            android:id="@+id/nav_humidity"
+            android:icon="@drawable/ic_humidity"
+            android:title="Humidité" />
+
+        <item
+            android:id="@+id/nav_proximity"
+            android:icon="@drawable/ic_proximity"
+            android:title="Proximité" />
+
+        <item
+            android:id="@+id/nav_magnetic"
+            android:icon="@drawable/ic_magnetic"
+            android:title="Champ magnétique" />
+    </group>
+
+    <!-- Section secondaire -->
+    <item android:title="Autres options">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="Partager l'application" />
+        </menu>
+    </item>
+</menu>

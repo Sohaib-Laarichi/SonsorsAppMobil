@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Logo animé -->
+        <ImageView
+            android:id="@+id/home_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:contentDescription="Logo"
+            android:layout_marginBottom="16dp"
+            android:alpha="0"
+            android:translationY="-50dp" />
+
+        <!-- Titre principal -->
+        <TextView
+            android:id="@+id/home_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenue sur SensorApp"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/home_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explorez les capteurs intégrés à votre appareil Android."
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Boutons stylisés -->
+        <Button
+            android:id="@+id/btn_sensors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📟 Voir les Capteurs"
+            android:backgroundTint="#3949AB"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btn_temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌡️ Température"
+            android:backgroundTint="#039BE5"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btn_graphs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📊 Visualiser les Graphiques"
+            android:backgroundTint="#43A047"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>
